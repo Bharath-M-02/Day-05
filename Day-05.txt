@@ -18,6 +18,9 @@ const oddNum = function (array, num) {
 const result = oddNum(arr1, 30);
 console.log(`Odd Numbers: ${result}`);
 
+Output:
+Odd Numbers: 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29
+
 IIFE:
 
 const arr1 = [];
@@ -29,6 +32,10 @@ const arr1 = [];
   }
   console.log(array.join(", "));
 })(arr1, 30);
+
+Output:
+1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29
+
 
 b) Convert all the strings to title caps in a string array.
 ANONYMOUS FUNCTION:
@@ -48,6 +55,9 @@ const result = titleCase(
 );
 console.log(result);
 
+Output:
+Elit Ex Mollit Deserunt Dolor Occaecat Et Eiusmod Anim Do Laboris.
+
 IIFE:
 
 ((str) => {
@@ -59,6 +69,9 @@ IIFE:
   }
   console.log(str.join(" "));
 })("elit ex mollit deserunt dolor occaecat et eiusmod anim do laboris.");
+
+Output:
+Elit Ex Mollit Deserunt Dolor Occaecat Et Eiusmod Anim Do Laboris.
 
 c) Sum of all numbers in an array.
 ANONYMOUS FUNCTION:
@@ -76,6 +89,9 @@ const findSum = function (arr) {
 const result = findSum(numbers);
 console.log(result);
 
+Output:
+46
+
 IIFE:
 
 const numbers = [1, 2, 8, 9, 7, 2, 3, 6, 3, 5];
@@ -87,6 +103,9 @@ const numbers = [1, 2, 8, 9, 7, 2, 3, 6, 3, 5];
   }
   console.log(sum);
 })(numbers);
+
+Output:
+46
 
 d) Return all the prime numbers in an array.
 ANONYMOUS FUNCTION:
@@ -113,6 +132,9 @@ const findPrime = function (inputArray, outputArray) {
 const result = findPrime(numbers, primeNumbers);
 console.log(result);
 
+Output:
+Prime Numbers: 1, 2, 5, 3, 7, 19
+
 IIFE:
 
 const numbers = [1, 2, 5, 3, 8, 12, 18, 30, 226, 7, 19, 777];
@@ -133,6 +155,9 @@ const primeNumbers = [];
   }
   console.log(`Prime Numbers: ${outputArray.join(", ")}`);
 })(numbers, primeNumbers);
+
+Output:
+Prime Numbers: 1, 2, 5, 3, 7, 19
 
 e) Return all the palindromes in an array.
 ANONYMOUS FUNCTION:
@@ -156,6 +181,15 @@ const checkPalindrome = function (inputArray, outputArray) {
 const result = checkPalindrome(palinArray, isPalinArray);
 console.log(result);
 
+Output:
+Array(5) [ "madam", "Malayalam", "redivider", "Civic", "reviver" ]
+0: "madam"
+1: "Malayalam"
+2: "redivider"
+3: "Civic"
+4: "reviver"
+length: 5
+
 IIFE:
 
 const palinArray = "madam, ball, Malayalam, redivider, call, Civic, reviver";
@@ -172,6 +206,15 @@ const isPalinArray = [];
   }
   console.log(outputArray);
 })(palinArray, isPalinArray);
+
+Output:
+Array(5) [ "madam", "Malayalam", "redivider", "Civic", "reviver" ]
+0: "madam"
+1: "Malayalam"
+2: "redivider"
+3: "Civic"
+4: "reviver"
+length: 5
 
 f) Return median of two sorted arrays of the same size.
 ANONYMOUS FUNCTION:
@@ -196,6 +239,9 @@ const findMedian = function (arr1, arr2, arr3) {
 const result = findMedian(array1, array2, array3);
 console.log(result);
 
+Output:
+4.8
+
 IIFE:
 
 const array1 = [5, 1, 8, 9, 2];
@@ -215,6 +261,9 @@ const array3 = [];
   console.log(median);
 })(array1, array2, array3);
 
+Output:
+4.8
+
 g) Remove duplicates from an array.
 ANONYMOUS FUNCTION:
 
@@ -228,6 +277,16 @@ const removeDuplicates = function (arr) {
 const result = removeDuplicates(fruits);
 console.log(result);
 
+Output:
+Array(6) [ "Apple", "Orange", "Mango", "Guava", "Watermelon", "Banana" ]
+0: "Apple"
+1: "Orange"
+2: "Mango"
+3: "Guava"
+4: "Watermelon"
+5: "Banana"
+length: 6
+
 IIFE:
 
 const fruits = ["Apple", "Orange", "Mango", "Guava", "Watermelon", "Apple", "Guava", "Banana"];
@@ -236,6 +295,16 @@ const fruits = ["Apple", "Orange", "Mango", "Guava", "Watermelon", "Apple", "Gua
   let duplicates = [...new Set(arr)];
   console.log(duplicates);
 })(fruits);
+
+Output:
+Array(6) [ "Apple", "Orange", "Mango", "Guava", "Watermelon", "Banana" ]
+0: "Apple"
+1: "Orange"
+2: "Mango"
+3: "Guava"
+4: "Watermelon"
+5: "Banana"
+length: 6
 
 3) Do the below programs in arrow functions.
 
@@ -254,6 +323,9 @@ const oddNum = (array, num) => {
 const result = oddNum(arr1, 30);
 console.log(`Odd Numbers: ${result}`);
 
+Output:
+Odd Numbers: 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29
+
 b) Convert all the strings to title caps in a string array.
 
 const titleCase = (str) => {
@@ -271,6 +343,9 @@ const result = titleCase(
 );
 console.log(result);
 
+Output:
+Elit Ex Mollit Deserunt Dolor Occaecat Et Eiusmod Anim Do Laboris.
+
 c) Sum of all numbers in an array.
 
 const numbers = [1, 2, 8, 9, 7, 2, 3, 6, 3, 5];
@@ -285,6 +360,9 @@ const findSum = (arr) => {
 
 const result = findSum(numbers);
 console.log(result);
+
+Output:
+46
 
 d) Return all the prime numbers in an array.
 
@@ -310,6 +388,9 @@ const findPrime = function (inputArray, outputArray) {
 const result = findPrime(numbers, primeNumbers);
 console.log(result);
 
+Output:
+Prime Numbers: 1, 2, 5, 3, 7, 19
+
 e) Return all the palindromes in an array.
 
 const palinArray = "madam, ball, Malayalam, redivider, call, Civic, reviver";
@@ -330,3 +411,12 @@ const checkPalindrome = (inputArray, outputArray) => {
 
 const result = checkPalindrome(palinArray, isPalinArray);
 console.log(result);
+
+Output:
+Array(5) [ "madam", "Malayalam", "redivider", "Civic", "reviver" ]
+0: "madam"
+1: "Malayalam"
+2: "redivider"
+3: "Civic"
+4: "reviver"
+length: 5
